@@ -59,6 +59,7 @@ class EmailClient {
                                     if (typeof parsed === 'string') {
                                         parsed = JSON.parse(parsed);
                                     }
+                                    
                                     message.from = parsed.from.value[0];
                                     message.subject = parsed.subject;
                                     message.body = parsed.text;
